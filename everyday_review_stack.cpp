@@ -42,8 +42,9 @@ public:
             st.pop();
             res.push_back(node->val);
 
-            if(node->left) st.push(root->left);
             if(node->right) st.push(root->right);
+            if(node->left) st.push(root->left);
+            
 
         }
 
